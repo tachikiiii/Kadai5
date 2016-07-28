@@ -16,6 +16,7 @@ public class IntToEng {
     static String translateEng(int n) {
 	String[] digit1 = {"zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
 	String[] digit2 = {"","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"};
+	if(n==100) return "one hundred";
 	if (n<20) return digit1[n];
 	if (n>=20 && n<100) {
 	    int m1,m2;
